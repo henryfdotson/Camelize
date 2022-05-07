@@ -1,5 +1,21 @@
+var input = document.getElementById("textInput");
+
+input.addEventListener("keypress", function(event) {
+  if(event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("button").click();
+  }
+});
+
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function outputCamel(string) {
+  const resultDiv = document.createElement("div");
+  resultDiv.classList.add("card");
+  resultDiv.innerHTML = string;
+  document.getElementById("results").appendChild(resultDiv);
 }
 
 function camelize(input) {
@@ -12,7 +28,7 @@ function camelize(input) {
     camel.push(element);
   });
   camel.unshift(firstElement);
-  camelstring = camel.toString();
-  camelstring.replace(",","");
-  alert(camelstring);
+  camelString = camel.toString();
+  camelWithoutCommas = camelString.replaceAll(",","");
+  outputCamel(camelWithoutCommas);
 }
