@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #057ee2 !important;
+  background: #47acff url(dunes.png) no-repeat bottom center !important;
 }
 
 #title,
@@ -57,4 +57,11 @@ body {
 @-o-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+.logo img {
+  width: 40px;
+  margin: 0px auto;
+  display: block;
+  margin-top: 1rem;
 }

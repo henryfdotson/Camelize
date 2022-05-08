@@ -30,5 +30,6 @@ function camelize(input) {
   camel.unshift(firstElement);
   camelString = camel.toString();
   camelWithoutCommas = camelString.replaceAll(",","");
+  camelWithoutCommas = camelWithoutCommas.replaceAll(" ","");
   outputCamel(camelWithoutCommas);
 }
