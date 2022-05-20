@@ -1,5 +1,7 @@
 # Camelize
 
+![camelize thumbnail](https://henryd.art/images/codethumbs/camelizethumb.png)
+
 Camelize is a super simple web app with one goal:
 
 #### convert-hyphenated-things ---> toCamelCase
